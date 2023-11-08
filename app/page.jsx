@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="mt-[50vh]">
+        <div className="mt-[50vh]   w-auto">
           <Slider />
         </div>
       </section>
@@ -65,8 +65,6 @@ export default function Home() {
           <Download />
         </div>
       </section>
-
-
     </div>
   );
 }
