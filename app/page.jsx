@@ -1,6 +1,7 @@
+import Download from "@/components/Download/Download";
 import Header from "@/components/Header/Header";
 import HomeComp from "@/components/Home/Home";
-import Image from "next/image";
+import Slider from "@/components/Slider/Slider";
 
 export default function Home() {
   return (
@@ -53,6 +54,20 @@ export default function Home() {
           <HomeComp />
         </div>
       </section>
+
+      <section>
+        <div className="mt-[50vh]">
+          <Slider />
+        </div>
+      </section>
+
+      <section>
+        <div className="mt-[50vh]">
+          <Download />
+        </div>
+      </section>
+
+
     </div>
   );
 }
