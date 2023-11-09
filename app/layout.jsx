@@ -3,6 +3,10 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Q&R|Home</title>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body
         className=" w-[100vw] min-h-screen px-5"
         style={{ backgroundColor: "#F4D839", overflowX: "hidden" }}

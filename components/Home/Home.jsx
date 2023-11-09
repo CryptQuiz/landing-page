@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 const Home = () => {
@@ -8,6 +8,12 @@ const Home = () => {
     width: 300,
     height: 50,
   });
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">

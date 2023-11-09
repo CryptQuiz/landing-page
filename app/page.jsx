@@ -1,3 +1,4 @@
+"use client";
 import Download from "@/components/Download/Download";
 import Header from "@/components/Header/Header";
 import HomeComp from "@/components/Home/Home";
@@ -8,9 +9,11 @@ import Partners from "@/components/Partners/Partners";
 import Play from "@/components/Play/Play";
 import Slider from "@/components/Slider/Slider";
 
+import Animation from "@/components/Animation/Animation";
+
 export default function Home() {
   return (
-    <div className="text-orange-2">
+    <div className="text-orange-2 w-full overflow-hidden">
       <div
         style={{
           width: "100%",
@@ -49,56 +52,70 @@ export default function Home() {
             ></path>
           </svg>
         </div>
-        <div>
-          <Header />
-        </div>
+
+        <Header />
       </div>
 
       <section>
-        <div className="mt-[120vh]">
-          <HomeComp />
+        <div className="mt-[120vh] w-full">
+          <Animation>
+            <HomeComp />
+          </Animation>
         </div>
       </section>
 
       <section>
         <div className="mt-[30vh]   w-auto">
-          <Slider />
+          <Animation>
+            <Slider />
+          </Animation>
         </div>
       </section>
 
       <section>
         <div className="mt-[30vh]">
-          <Download />
+          <Animation>
+            <Download />
+          </Animation>
         </div>
       </section>
 
       <section>
         <div className="mt-[30vh]">
           <LeaderBoard />
+          <Animation></Animation>
         </div>
       </section>
 
       <section>
         <div className="mt-[30vh]">
-          <Play />
+          <Animation>
+            <Play />
+          </Animation>
         </div>
       </section>
 
       <section>
         <div className="mt-[30vh]">
-          <Info />
+          <Animation>
+            <Info />
+          </Animation>
         </div>
       </section>
 
       <section>
         <div className="mt-[20vh]">
-          <NFTs />
+          <Animation>
+            <NFTs />
+          </Animation>{" "}
         </div>
       </section>
 
       <section>
         <div className="mt-[10vh]">
-          <Partners />
+          <Animation>
+            <Partners />
+          </Animation>
         </div>
       </section>
 
