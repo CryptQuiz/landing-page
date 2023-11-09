@@ -4,14 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-const boxesData = [
-  { color: "red-1", label: "SCALABLE" },
-  { color: "blue-1", label: "EASY ADAPTATION FOR WEB2 USERS" },
-  { color: "purple-1", label: "EASY ADAPTATION FOR WEB2 PLATFORMS" },
-  { color: "pink-1", label: "EASY ADAPTATION FOR WEB2 PLATFORMS" },
-  { color: "red-1", label: "SCALABLE" },
-];
-const Slider = () => {
+
+const Slider = ({ data }) => {
   return (
     <Swiper
       slidesPerView={3.4}
