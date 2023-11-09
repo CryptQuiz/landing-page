@@ -10,8 +10,8 @@ const Download = () => {
                 width={5000}
                 height={500}
             />
-            <div className='flex justify-center items-center'>
-            <div className='absolute w-[40vw] h-[25vh] flex-row justify-center items-center bg-white border  border-black border-b-4 border-r-4 rounded-[20px] p-1'>
+            <div className='flex justify-center items-centerp '>
+            <div className='absolute w-[40vw] h-[25vh] flex-row justify-center items-center bg-white border  border-black border-b-4 border-r-4 rounded-[20px] pb-1 '>
                 <div className='flex flex-start p-5'>
                     <div className='bg-red-1 rounded-full w-5 h-5 m-1' ></div>
                     <div className='bg-orange-2 rounded-full w-5 h-5 m-1'></div>
