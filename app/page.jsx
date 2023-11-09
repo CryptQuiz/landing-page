@@ -44,18 +44,19 @@ export default function Home() {
             ></path>
           </svg>
         </div>
-
-        <Header />
+        <div>
+          <Header />
+        </div>
       </div>
 
       <section>
-        <div className="mt-[110vh]">
+        <div className="mt-[120vh]">
           <HomeComp />
         </div>
       </section>
 
       <section>
-        <div className="mt-[50vh]   w-auto">
+        <div className="mt-[30vh]   w-auto">
           <Slider />
         </div>
       </section>
