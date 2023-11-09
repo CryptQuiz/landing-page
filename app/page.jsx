@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="mt-[50vh]">
+        <div className="mt-[30vh]">
           <Download />
         </div>
       </section>
@@ -75,20 +75,18 @@ export default function Home() {
           <LeaderBoard />
         </div>
       </section>
-      
+
       <section>
-        <div className="mt-[80vh]">
+        <div className="mt-[30vh]">
           <Play />
         </div>
       </section>
 
       <section>
-        <div className="mt-[20vh]">
+        <div className="mt-[30vh]">
           <Info />
         </div>
       </section>
-
-
     </div>
   );
 }
