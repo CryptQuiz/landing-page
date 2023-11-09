@@ -55,3 +55,14 @@
     transform: scale(1.2);
     z-index: 1;
 }
+
+
+.text-shadow {
+
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+
+}

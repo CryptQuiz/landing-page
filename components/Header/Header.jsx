@@ -1,12 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 
 const Header = () => {
-  const boxesData = [
+  const [boxesData, setBoxesData] = React.useState([
     { color: "red-1", label: "Question" },
     { color: "blue-1", label: "Answer" },
     { color: "purple-1", label: "Rewards" },
-  ];
+  ]);
+
   return (
     <div
       className="bg-pink-1 absolute top-0 left-0 w-auto h-[60vh] px-10 pt-10 "
@@ -32,13 +35,6 @@ const Header = () => {
       <div className="flex justify-around pt-20 pl-20">
         <div className="w-2/3 h-auto flex justify-start items-center">
           <p
-            //             text-shadow: 2px 2px 0px #000;
-            // font-family: Lexend Mega;
-            // font-size: 96px;
-            // font-style: normal;
-            // font-weight: 700;
-            // line-height: normal;
-
             style={{
               textShadow: "3px 3px 3px #000",
               fontFamily: "Lexend Mega",
@@ -67,18 +63,33 @@ const Header = () => {
           className="flex flex-row justify-around items-center w-[80%] rounded-[20px] drop-shadow-[4px_4px_rgba(0,0,0,1)]
             "
         >
-          {boxesData.map((box, index) => (
-            <button
-              key={index}
-              className={`bg-${box.color} font-lexend drop-shadow-[4px_4px_rgba(0,0,0,1)] text-white rounded-[20px] p-4 px-12
+          <button
+            className={`bg-red-1 font-lexend drop-shadow-[4px_4px_rgba(0,0,0,1)] text-white rounded-[20px] p-4 px-12
                 hover:drop-shadow-none transition-all duration-200 ease-in-out
             `}
-            >
-              <p className="font-lexend drop-shadow-[2px_2px_rgba(0,0,0,1)] text-2xl">
-                {box.label}
-              </p>
-            </button>
-          ))}
+          >
+            <p className="font-lexend drop-shadow-[2px_2px_rgba(0,0,0,1)] text-2xl">
+              Question
+            </p>
+          </button>
+          <button
+            className={`bg-blue-1 font-lexend drop-shadow-[4px_4px_rgba(0,0,0,1)] text-white rounded-[20px] p-4 px-12
+                hover:drop-shadow-none transition-all duration-200 ease-in-out
+            `}
+          >
+            <p className="font-lexend drop-shadow-[2px_2px_rgba(0,0,0,1)] text-2xl">
+              Answer
+            </p>
+          </button>
+          <button
+            className={`bg-purple-1 font-lexend drop-shadow-[4px_4px_rgba(0,0,0,1)] text-white rounded-[20px] p-4 px-12
+                hover:drop-shadow-none transition-all duration-200 ease-in-out
+            `}
+          >
+            <p className="font-lexend drop-shadow-[2px_2px_rgba(0,0,0,1)] text-2xl">
+              Rewards
+            </p>
+          </button>
         </div>
       </div>
     </div>
