@@ -97,8 +97,26 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="mt-[20vh]">
+        <div className="mt-[10vh]">
           <Partners />
+        </div>
+      </section>
+
+      <section>
+        <div className="mt-[10vh]">
+          <svg
+            viewBox="0 0 500 60"
+            preserveAspectRatio="none"
+            transform="rotate(180)"
+            backgroundColor="red"
+          >
+            <path
+              d="M 0 30  C 200 100 280 0 500 30 L 500 0 L 0 0 Z "
+              fill="#FF68B5"
+              stroke="black"
+              strokeWidth="1px"
+            ></path>
+          </svg>
         </div>
       </section>
     </div>
