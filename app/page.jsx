@@ -3,10 +3,14 @@ import Header from "@/components/Header/Header";
 import HomeComp from "@/components/Home/Home";
 import Info from "@/components/Info/Info";
 import LeaderBoard from "@/components/LeaderBoard/LeaderBoard";
+import NFTs from "@/components/NFTs/NFTs";
+import Partners from "@/components/Partners/Partners";
 import Play from "@/components/Play/Play";
 import Slider from "@/components/Slider/Slider";
 
 export default function Home() {
+
+
   return (
     <div className="text-orange-2">
       <div
@@ -88,7 +92,17 @@ export default function Home() {
         </div>
       </section>
 
+      <section>
+        <div className="mt-[20vh]">
+          <NFTs />
+        </div>
+      </section>
 
+      <section>
+        <div className="mt-[20vh]">
+          <Partners />
+        </div>
+      </section>
     </div>
   );
 }
