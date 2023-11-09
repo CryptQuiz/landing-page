@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-      <h1 className="text-center text-white drop-shadow-[3px_3px_rgba(0,0,0,1)]   font-lexend text-5xl mb-20">
+      <h1 className="text-center text-white text-shadow drop-shadow-[3px_3px_rgba(0,0,0,1)]   font-lexend text-5xl mb-20">
         Welcome On Board
       </h1>
       <div className="bg-white  border-black border-2 border-b-8 border-r-8 rounded-[40px] h-4/5 w-full mt-20 flex flex-row ">

@@ -28,7 +28,7 @@ const LeaderBoard = () => {
     return (
         <div className=''>
             <div className='flex justify-center items-center text-4xl drop-shadow-[2px_2px_rgba(0,0,0,1)] mb-20' >
-                <h1 className='text-white font-bold font-lexend'>LeaderBoard</h1>
+                <h1 className='text-white text-5xl text-shadow font-bold font-lexend'>LeaderBoard</h1>
             </div>
             <div className='flex justify-around relative'>
                 <div className='bg-white h-[70vh] flex flex-row items-center justify-center absolute w-2/3  border border-black border-b-4 border-r-4 rounded-[20px]'>

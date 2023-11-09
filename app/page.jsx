@@ -1,6 +1,7 @@
 import Download from "@/components/Download/Download";
 import Header from "@/components/Header/Header";
 import HomeComp from "@/components/Home/Home";
+import Info from "@/components/Info/Info";
 import LeaderBoard from "@/components/LeaderBoard/LeaderBoard";
 import Play from "@/components/Play/Play";
 import Slider from "@/components/Slider/Slider";
@@ -80,6 +81,14 @@ export default function Home() {
           <Play />
         </div>
       </section>
+
+      <section>
+        <div className="mt-[20vh]">
+          <Info />
+        </div>
+      </section>
+
+
     </div>
   );
 }

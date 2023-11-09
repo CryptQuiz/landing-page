@@ -2,36 +2,10 @@ import Image from 'next/image'
 import React from 'react'
 
 const Play = () => {
-  const box = [
-    {
-      color: 'bg-blue-1',
-      text: 'Connect with your wallet or Google account.',
-      image: '/images/image11.png'
-    },
-    {
-      color: 'bg-green-1',
-      text: 'Create your profile.',
-      image: '/images/Rogue.png'
-    },
-    {
-      color: 'bg-red-1',
-      text: 'Find proper game.',
-      image: '/images/Bueno.png'
-    },
-    {
-      color: 'bg-purple-1',
-      text: 'Join the events.',
-      image: '/images/Class.png'
-    },
-    {
-      color: 'bg-pink-1',
-      text: 'Have fun and Earn Income.',
-      image: '/images/Feliz.png'
-    },
-  ]
+
   return (
     <div className='flex justify-center items-center flex-col' >
-      <h1 className='text-white text-6xl font-bold font-lexend drop-shadow-[2px_2px_rgba(0,0,0,1)] my-10'>How to play? </h1>
+      <h1 className='text-white text-5xl text-shadow font-bold font-lexend drop-shadow-[2px_2px_rgba(0,0,0,1)] my-10'>How to play? </h1>
       <div className='flex flex-col justify-around items-center'>
 
 
