@@ -33,7 +33,7 @@ export default function Home() {
           <div
             style={{
               width: "100%",
-              height: "84%",
+              height: "80%",
               backgroundColor: "#FF68B5",
             }}
           ></div>
@@ -47,8 +47,8 @@ export default function Home() {
               // stroke-dasharray: 2,2;
               // stroke-linejoin: round;
 
-              stroke="black"
-              strokeWidth="1px"
+              // stroke="black"
+              // strokeWidth="1px"
             ></path>
           </svg>
         </div>

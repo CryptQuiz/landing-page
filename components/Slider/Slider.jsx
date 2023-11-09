@@ -1,7 +1,7 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 
@@ -9,11 +9,21 @@ const Slider = ({ data }) => {
   return (
     <Swiper
       slidesPerView={3.4}
-      onSlideChange={() => console.log("slide change")}
+      //onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
       pagination={{
         clickable: true,
       }}
+      loop={true}
+      autoplay={{
+        delay: 1000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+        waitForTransition: true,
+      }}
+      navigation={true}
+      modules={[Autoplay, Pagination, Navigation]}
+      className="flex justify-center items-center"
     >
       {/* {boxesData.map((box, index) => (
         <SwiperSlide key={index} className="flex justify-center items-center">
