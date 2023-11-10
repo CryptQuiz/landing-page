@@ -34,7 +34,7 @@ const Home = () => {
           <div className="relative ">
             <Image
               className="absolute left-40 -top-16 z-10"
-              src="/images/Humans.png"
+              src="/images/humans.png"
               width={300}
               height={300}
             />
