@@ -15,6 +15,7 @@ const Slider = ({ data }) => {
         clickable: true,
       }}
       loop={true}
+      smoothTransition={true}
       autoplay={{
         delay: 1000,
         disableOnInteraction: false,

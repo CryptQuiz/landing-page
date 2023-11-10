@@ -21,7 +21,7 @@ const Animation = ({
       y: 0,
     },
   },
-  transition = { duration: 1, delay: 0.25 },
+  transition = { duration: 0.75, delay: 0.25 },
 }) => {
   const ref = useRef(null);
 

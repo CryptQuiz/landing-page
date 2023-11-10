@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Header = () => {
   const [boxesData, setBoxesData] = React.useState([
@@ -9,6 +9,11 @@ const Header = () => {
     { color: "blue-1", label: "Answer" },
     { color: "purple-1", label: "Rewards" },
   ]);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
 
   return (
     <div
@@ -43,6 +48,10 @@ const Header = () => {
               fontWeight: "700",
               lineHeight: "normal",
               color: "#FFFFFF",
+              opacity: isVisible ? 1 : 0,
+
+              transform: isVisible ? "translateX(0)" : "translateX(50%)",
+              transition: "transform 1s ease-in-out",
             }}
           >
             New Generation GameFi for easy to learn, enjoy and earn
@@ -50,10 +59,15 @@ const Header = () => {
         </div>
         <div className="w-1/3 h-full flex justify-start items-start ">
           <Image
-            style={{ zIndex: "1" }}
             src={"/images/human.png"}
             width={220}
             height={220}
+            style={{
+              opacity: isVisible ? 1 : 0,
+              transition: "opacity 2s ease-in-out",
+              transform: isVisible ? "translateX(50%)" : "translateX(0%)",
+              transition: "transform 1s ease-in-out",
+            }}
           />
         </div>
       </div>
